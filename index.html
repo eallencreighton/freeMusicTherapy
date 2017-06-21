@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Music Therapy</title>
+	<link rel="stylesheet" href="styles/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch:700|Raleway" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<header>
+		<h1>Free Music Therapy</h1>
+		<h2>How are you feeling?</h2>
+	</header>
+
+	<div class="wrapper">
+		<form action="">
+			<div class="feelings-section flexContainer">
+				<h2 class="sectionHeading">I'm</h2>
+				<div class="choice">
+					<div class="labelImage">
+						<label for="depressed"><img src="images/depressed.svg" alt=""></label>
+					</div>
+					<div class="input">
+						<input type="radio" name="feelings" id="depressed" value="depressed">
+						<label for="depressed">Curled up fetal</label>
+					</div>
+				</div>
+
+				<div class="choice">
+					<div class="labelImage">
+						<label for="angry"><img src="images/angry1.svg" alt=""></label>
+					</div>
+					<div class="input">
+						<input type="radio" name="feelings" id="angry" value="angry">
+						<label for="angry">Raging homicidal</label>
+					</div>
+				</div>
+
+				<div class="choice">
+					<div class="labelImage">
+						<label for="anxious"><img src="images/anxious.svg" alt=""></label>
+					</div>
+					<div class="input">
+						<input type="radio" name="feelings" id="anxious" value="anxious">
+						<label for="anxious">Pulling my hair out</label>
+					</div>
+				</div>
+			</div> <!-- END OF FEELINGS -->
+
+			<div class="id-div" id="antagonists"></div>
+
+			<h2 class="sectionHeading">Because</h2>
+			<div class="antagonists-section flexContainer">
+				<div class="choice">
+					<div class="labelImage">
+						<label for="person"><img src="images/person.svg" alt=""></label>
+					</div>
+					<div class="input">
+						<input type="radio" name="antagonists" id="person" value="person">
+						<label for="person">He/She/They</label>
+					</div>
+				</div>
+
+				<div class="choice">
+					<div class="labelImage">
+						<label for="system"><img src="images/system.svg" alt=""></label>
+					</div>
+					<div class="input">
+						<input type="radio" name="antagonists" id="system" value="system">
+						<label for="system">"Big Brother/The Man"</label>
+					</div>
+				</div>
+
+				<div class="choice">
+					<div class="labelImage">
+						<label for="transportation"><img src="images/transportation.svg" alt=""></label>
+					</div>
+					<div class="input">
+						<input type="radio" name="antagonists" id="transportation" value="transportation">
+						<label for="transportation">The TTC/401</label>
+					</div>
+				</div>
+			</div> <!-- END OF ANTAGONISTS -->
+
+			<div class="id-div last" id="agressions"></div>
+
+			<div class="agressions-section flexContainer">
+				<div class="choice">
+					<div class="labelImage">
+						<label for="soulCrush"><img src="images/soulCrush.svg" alt=""></label>
+					</div>
+					<div class="input">
+						<input type="radio" name="agressions" id="soulCrush" value="soulCrush">
+						<label for="soulCrush">Crushed my soul</label>
+					</div>
+				</div>
+
+				<div class="choice">
+					<div class="labelImage">
+						<label for="screwed"><img src="images/screwed.svg" alt=""></label>
+					</div>
+					<div class="input">
+						<input type="radio" name="agressions" id="screwed" value="screwed">
+						<label for="screwed">Screwed me over</label>
+					</div>
+				</div>
+				
+				<div class="choice">
+					<div class="labelImage">
+						<label for="crazy"><img src="images/crazy.svg" alt=""></label>
+					</div>
+					<div class="input">
+						<input type="radio" name="agressions" id="crazy" value="crazy">
+						<label for="crazy">Is @#%$-ing crazy</label>
+					</div>
+				</div>
+
+				<div class="submit-container">
+					<input type="submit" value="Please Advise">
+				</div>
+			</div> <!-- END OF AGRESSIONS -->
+
+		</form>
+		<section class="results">
+		<footer>
+			<p>Made with love by <a href="http://www.esmecodes.com">Esme Allen-Creighton</a> and <a href="http://www.natalieKwok.com">Natalie Kwok</a> &copy 2017</p>
+		</footer>
+		</section>
+		<footer>
+			<p>Made with love by <a href="http://www.esmecodes.com">Esme Allen-Creighton</a> and <a href="http://www.natalieKwok.com">Natalie Kwok</a> &copy 2017</p>
+		</footer>
+
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="javascript/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,410 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden] {
+  display: none; }
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:active, a:hover {
+  outline: 0; }
+
+h1 {
+  font-size: 2em; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: 700; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: \201C \201D \2018 \2019; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -.5em; }
+
+sub {
+  bottom: -.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0; }
+
+button, input {
+  line-height: normal; }
+
+button, html input[type=button],
+input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], input[disabled] {
+  cursor: default; }
+
+input[type=checkbox], input[type=radio] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body, figure {
+  margin: 0; }
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  background-color: #92B6B1; }
+
+header {
+  position: fixed;
+  top: 0;
+  height: 30vh;
+  width: 100%;
+  z-index: 99;
+  background-color: #92B6B1;
+  margin-bottom: 50px; }
+
+h1, h2 {
+  text-align: center; }
+
+h2 {
+  font-family: "Raleway", sans-serif; }
+
+h2.sectionHeading {
+  font-size: 25px; }
+  h2.sectionHeading:first-of-type {
+    margin-top: 50px; }
+
+h1 {
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 60px;
+  text-transform: uppercase;
+  position: relative; }
+  h1:after {
+    content: "";
+    background-color: black;
+    width: 300px;
+    height: 2px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
+
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto; }
+
+form {
+  background-color: #92B6B1;
+  margin: 30vh 0 0 0;
+  position: relative; }
+  form fieldset {
+    border: none;
+    text-align: center; }
+
+.flexContainer {
+  background-color: #92B6B1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 30px;
+  height: 50vh; }
+  .flexContainer h2 {
+    width: 100%; }
+
+.id-div {
+  height: 30vh; }
+
+.choice {
+  width: calc(33.3% - 50px);
+  text-align: center;
+  margin: 25px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.labelImage {
+  margin: 15px auto; }
+
+.labelImage img {
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 1px 0px #444, 2px 2px 0px #444, 3px 3px 0px #444, 4px 4px 0px #444, 5px 5px 0px #444;
+  box-shadow: 1px 1px 0px #444, 2px 2px 0px #444, 3px 3px 0px #444, 4px 4px 0px #444, 5px 5px 0px #444;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  position: relative;
+  border: 1px solid black;
+  top: 0px;
+  display: block;
+  height: 170px;
+  width: 170px;
+  padding: 25px 10px 10px 10px; }
+
+.labelImage img:active {
+  -webkit-box-shadow: 0px 0px 0px #222, 1px 1px 0px #222, 2px 2px 0px #222, 3px 3px 0px #222;
+  box-shadow: 0px 0px 0px #222, 1px 1px 0px #222, 2px 2px 0px #222, 3px 3px 0px #222;
+  margin-top: 10px;
+  margin-left: 10px; }
+
+.submit-container input[type=submit] {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 20px 50px;
+  margin: 20px 0; }
+
+.results {
+  display: none;
+  text-align: center;
+  height: 100vh;
+  max-width: 900px;
+  background-color: #C1666B;
+  position: fixed;
+  bottom: 50%;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+  z-index: 100; }
+  .results h2 {
+    font-size: 40px;
+    text-transform: none; }
+  .results .resultsContent {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    color: white;
+    text-shadow: 0 0 2px black;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 90%; }
+    .results .resultsContent .imageContainer {
+      width: 30%;
+      margin-right: 20px;
+      position: relative; }
+    .results .resultsContent img {
+      margin-right: 20px;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+    .results .resultsContent h2 {
+      width: calc(70% - 20px); }
+    .results .resultsContent .buttonContainer {
+      width: 100%; }
+    .results .resultsContent button {
+      font-family: "Raleway", sans-serif;
+      font-size: 16px;
+      text-transform: uppercase;
+      background-color: #fff;
+      border: 1px solid black;
+      border-radius: 5px;
+      padding: 20px 50px;
+      margin: 20px 0; }
+  .results footer {
+    height: 10%; }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  header {
+    height: 20vh; }
+  h1 {
+    font-size: 40px; }
+  h2 {
+    font-size: 20px; }
+  h2.sectionHeading {
+    font-size: 20px; }
+  form {
+    background-color: #92B6B1;
+    margin: 22vh 0 0 0; }
+  .id-div {
+    height: 20vh; }
+  .id-div.last {
+    height: 15vh; }
+  .flexContainer {
+    display: block;
+    text-align: center;
+    height: 80vh; }
+  .choice {
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .labelImage img {
+    height: 100px;
+    width: 100px;
+    padding: 10px 0 0 0; }
+  .input {
+    width: 50%;
+    text-align: left; }
+  .results h2 {
+    font-size: 20px; }
+  .results .resultsContent .imageContainer {
+    width: 100%;
+    margin-right: 0px;
+    position: relative; }
+  .results .resultsContent img {
+    margin-right: 20px;
+    border-radius: 50%;
+    position: initial;
+    top: 0;
+    left: 0;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; }
+  .results .resultsContent h2 {
+    width: 100%;
+    margin: 0 10px; } }
+
+footer {
+  text-align: center;
+  margin-top: 100px;
+  color: black; }
+  footer a {
+    text-decoration: none;
+    color: darkslateblue; }
+
+.resultsContent footer {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  text-shadow: none;
+  margin-top: 0; }
+
+input[type='radio'] {
+  display: none; }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 25px; }
+  .choice {
+    margin-left: -20px; } }

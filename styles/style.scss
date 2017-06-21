@@ -1,0 +1,311 @@
+@import "partials/setup";
+@import "partials/variables";
+
+body {
+	font-family: $textFont;
+	font-size: 20px;
+	background-color: $blue;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	height: 30vh;
+	width: 100%;
+	z-index: 99;
+	background-color: $blue;
+	margin-bottom: 50px;
+}
+
+
+h1, h2 {
+	text-align: center;
+}
+
+h2 {
+	font-family: $textFont;
+}
+
+
+
+h2.sectionHeading {
+	font-size: 25px;
+	&:first-of-type{
+		margin-top: 50px;
+	}
+}
+
+h1 {
+	font-family: 'Cabin Sketch', cursive;
+	font-size: 60px;
+	text-transform: uppercase;
+	position: relative;
+	&:after {
+		content:"";
+		background-color: black;
+		width: 300px;
+		height: 2px;
+		position: absolute;
+		bottom: -10px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+.wrapper {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+form {
+	background-color: $blue;
+	margin: 30vh 0 0 0;
+	position: relative;
+	fieldset {
+		border: none;
+		text-align: center;
+	}
+}
+
+.flexContainer {
+	background-color: $blue;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 30px;
+	height: 50vh;
+	h2 {
+		width: 100%;
+	}
+}
+
+.id-div {
+	height:30vh;
+}
+
+.choice {
+	width: calc(33.3% - 50px);
+	text-align: center;
+	margin: 25px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.labelImage {
+	margin: 15px auto;
+}
+
+.labelImage img{
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 1px 1px 0px #444, 2px 2px 0px #444, 3px 3px 0px #444, 4px 4px 0px #444, 5px 5px 0px #444;
+	transition: all 0.5s;
+	position: relative;
+	border: 1px solid black;
+	top: 0px;
+	display: block;
+	height: 170px;
+	width: 170px;
+	padding: 25px 10px 10px 10px;
+}
+
+	.labelImage img:active {
+		box-shadow: 0px 0px 0px #222, 1px 1px 0px #222, 2px 2px 0px #222, 3px 3px 0px #222; 
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+
+.submit-container {
+	input[type=submit]{
+		font-family: $textFont;
+		font-size: 16px;
+		text-transform: uppercase;
+		background-color: #fff;
+		border: 1px solid black;
+		border-radius:5px;
+		padding: 20px 50px;
+		margin: 20px 0;
+	};	
+}
+
+.results {
+	display: none;
+	text-align: center;
+	height: 100vh;
+	max-width: 900px;
+	background-color: $pink;
+	position: fixed;
+	bottom: 50%;
+	transform: translateY(50%);
+	z-index: 100;
+	h2 {
+		font-size: 40px;
+		text-transform: none;
+	}
+	.resultsContent {
+		display: flex;
+		flex-wrap: wrap;
+		color: white;
+		text-shadow: 0 0 2px black;
+		position: relative;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		height: 90%;
+		.imageContainer {
+			width: 30%;
+			margin-right: 20px;
+			position: relative;
+		}
+		img {
+			margin-right: 20px;
+			border-radius: 50%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+		h2 {
+			width: calc(70% - 20px);
+		}
+		.buttonContainer {
+			width: 100%;
+		}
+		button {
+			font-family: $textFont;
+			font-size: 16px;
+			text-transform: uppercase;
+			background-color: #fff;
+			border: 1px solid black;
+			border-radius:5px;
+			padding: 20px 50px;
+			margin: 20px 0;
+		}
+	}
+	footer {
+		height: 10%;
+	}
+}
+
+
+
+// RESPONSIVE STYLING
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	header {
+		height: 20vh;
+	}
+
+	h1 {
+		font-size: 40px;
+	}
+
+	h2 {
+		font-size: 20px;
+	}
+	h2.sectionHeading {
+		font-size: 20px;
+	}
+
+	form {
+		background-color: $blue;
+		margin: 22vh 0 0 0;
+	}
+
+	.id-div {
+		height: 20vh;
+	}
+
+	.id-div.last {
+		height: 15vh;
+	}
+
+	.flexContainer {
+		display: block;
+		text-align: center;
+		height: 80vh;
+	}
+
+	.choice {
+		width: 100%;
+		text-align: center;
+		margin: 0px;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.labelImage img{
+		height: 100px;
+		width: 100px;
+		padding: 10px 0 0 0;
+	}
+
+	.input {
+		width: 50%;
+		text-align: left;
+	}
+	
+	.results {
+		h2 {
+			font-size: 20px;
+		}
+		.resultsContent {
+			.imageContainer {
+				width: 100%;
+				margin-right: 0px;
+				position: relative;
+			}
+			img {
+				margin-right: 20px;
+				border-radius: 50%;
+				position: initial;
+				top: 0;
+				left: 0;
+				transform: none;
+			}
+			h2 {
+				width: 100%;
+				margin: 0 10px;
+			}
+		}
+	}
+
+}
+
+footer {
+	text-align: center;
+	margin-top: 100px;
+	color: black;
+	a {
+		text-decoration: none;
+		color: darkslateblue;
+	}
+}
+
+.resultsContent footer {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	text-shadow: none;
+	margin-top: 0;
+}
+
+input[type='radio'] {
+	display: none;
+}
+
+
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	h1 {
+		font-size: 25px;
+	}
+	.choice {
+	margin-left: -20px;
+	}
+	
+}
+
